@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,html {margin:0;
+  font-family:Arial;
+   height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0D47A1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+   right: 0;
+  bottom: 0;
+   font-size:100px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    z-index:9999;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 83px 16px 24px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1000;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: #0D47A1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative; }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-top:1px solid white;
+    padding-top:24px;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+p , h4 ,li{
+  color:#0D47A1;
+  font-size:17px;
+  padding:10px 0px;
+}
+
+h4{
+  font-weight: bolder;
+  font-size:19px;
+}
+h1{
+  color: #0D47A1;
+  font-weight: bolder;
+  text-align: center;
+  margin: 100px 0px 50px 0px;
+}
+#healthContent{
+padding: 50px 20% 10px 20%;
+}
+@media only screen and (max-width: 992px){
+ #healthContent{
+    padding:10px 20px 10px 20px;
+  }
+}
+
+.hero-image {
+  background-image: url("https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tea-%26-Health_Desktop.jpg");
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+color:white;
+margin:270px 0px 0px 150px;
+position:absolute;
+font-size:25px;
+}
+.hero-text h1{
+  color:white;
+}
+
+#container-fluidLast{
+  margin-top: 50px; 
+  background-color: #0D47A1 ;
+  color:white;
+  text-align: center;
+  padding-top: 40px;
+}
+#container-fluidLast a {
+  color:white;
+  margin-top: 0px;
+  text-decoration: none;
+}
+#container-fluidLast h4{
+  color:white;
+}
+#container-fluidLast  a:hover{
+  
+  color:white;
+}
+#container-fluidLast p{
+  margin-top: -15px;
+  padding-top: 0px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" ><img src="https://www.tetleyusa.com/themes/custom/tetley/logo.png" id="imgTetley" title="Home"> </a>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Our Teas
+
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Our Full Range</a>
+      <a href="#">Black Hot Tea</a>
+      <a href="#">Green Teas</a>
+      <a href="#">Caffeine Free & Decaf</a>
+      <a href="SuperTeas.html">Super Teas</a>
+      <a href="#">Black Iced Tea</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Learn & Explore
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="TeaBasics.html">Tea Basics</a>
+      <a href="#">Tea & Health</a>
+      <a href="#">Tea Recipes</a>
+      <a href="#">Perfect Brew</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">About Tetley 
+     
+    </button>
+    <div class="dropdown-content">
+      <a href="#">The Tetley Story</a>
+      <a href="#">Sustainability</a>
+     
+    </div>
+  </div> 
+  
+  <a href="javascript:void(0);" style="font-size:35px" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Tea & Health</h1>
+  </div>
+</div>
+
+
+
+
+<div  id="healthContent">
+  <p>Looking for information on Tea and Health? Well, below you will find a few more things on how tea can have an impact on your health and benefit you.</p>
+  <h4>Fluid Intake:</h4>
+  <p>Drinking tea is a great way to help keep your body hydrated.  About 70% of the body is made up of water and this level can be affected by water lost through perspiration or as water vapor when breathing and talking.  When brewed, green tea is approximately 99% water so drinking it regularly throughout the day will help maintain hydration and make an important contribution to your daily fluid requirements.  Your daily fluid needs will vary depending on the climate in which you live in and your activity level throughout the day.  As a result, it’s recommended that you drink plenty of fluids regularly throughout the day to keep your body hydrated and help prevent you from becoming dehydrated.</p>
+  <h4>Low Calorie:</h4>
+  <p>Infusions prepared from green and black and herbal teas are naturally low in calories making them an ideal everyday drink for everyone, especially those who are looking to maintain a healthy weight.  Unlike many sugar sweetened beverages available in the marketplace, Tetley teas are naturally sugar free and contains 0 Calories per cup making them one of the tastiest and low-calorie drinks around!</p>
+  <h4>Caffeine:</h4>
+  <p>A cup of Tetley black tea contains 50 mg of caffeine which is about half the caffeine of a cup of coffee. A cup of Tetley green tea contains 33mg of caffeine per cup (the lower level in a cup of green tea is because less tea is needed per cup to make a tasty cup of green tea) If you want to reduce your caffeine intake for one reason or another, there are plenty of alternatives that we can help you out with:</p>
+  <ul>
+    <li>Tetley Decaf gives you the black tea flavor you love(British Blend Decaffeinated has approx. 115 mg flavonoids per cup; Classic Blend Decaffeinated has approx. 90 mg per cup), but with reduced levels of caffeine   a maximum of 10 mg of caffeine per cup. In general terms, because decaffeinated tea has a caffeine content of 0.4% and regular tea has a caffeine content of 4.0%, we can state that decaffeinated tea is 99.6% caffeine-free. The amount of caffeine in a cup of decaffeinated tea is approximately 4 to 6 milligrams. The amount of caffeine in a cup of regular tea is approximately 45 milligrams.</li>
+    <li>Our Tetley Fruit & Herbal teas are made up of natural fruits, herbs, flowers and natural flavorings and they do not include leaves from the traditional tea plant (Camelia sinensis). So no caffeine hit in sight!</li>
+    <li>Redbush, rooibos or red tea is also a naturally caffeine free herbal that as it comes from the South African plant Aspalathus linearis.</li>
+  </ul>
+  <h4>Fluoride:</h4>
+  <p>Green & black tea not only helps to keep the body refreshed but is also a natural source of fluoride.  One cup of green tea typically contains around 0.3mg fluoride.  Fluoride is a mineral that has been scientifically proven to support normal tooth mineralisation. </p>
+  <h4>Manganese:</h4>
+  <p>Tea is also a natural source of manganese.  One cup of tea typically contains between 0.1 to 0.5 mg manganese.  Manganese is an essential mineral required for bone formation which supports energy metabolism. It is also a constituent of an antioxidant enzyme, which helps prevent free radical-mediated damage to cells.</p>
+  <h4>Flavonoids:</h4>
+  <p>Tetley had our hot teas analyzed, and our British Blend contains approx. 200 mg of flavonoids per cup; our British Blend Decaffeinated has approx. 115 mg, our Classic Blend has approx. 156 mg and the Classic Blend Decaffeinated has approx. 90 mg per cup. Our Pure Green blend has 160 mg per cup, and the decaffeinated version has 48 mg. </p>
+  <h4>Tetley Super Teas</h4>
+  <p>Tetley is also offering the nation’s tea-lovers something new and unique, with growing demand for specialty teas and the wellness movement. Our Super Tea range has taken this one step further – infusing our favorite teas with vitamins. Tetley Super Teas are teas with real vitamins with B6, C and B7.</p>
+</div>
+
+
+<div  id="container-fluidLast">
+ 
+   
+        <h4>Legal</h4>
+        <p><a href="https://www.tetleyusa.com/terms-conditions"> Terms & Conditions</a></p>
+        <p><a href="https://www.tetleyusa.com/privacy-policy"> Privacy Policy</a></p>
+        <p><a href="https://www.tetleyusa.com/california-transparency-supply-chains-act"> The California Transparency in Supply Chains Act</a></p>
+        <p><a href="https://www.tetleyusa.com/copyright"> Copyright</a></p>
+        <p><a href="https://www.tetleyusa.com/cookie-policy"> Cookie Policy</a></p>
+    
+        <h4>Customer Support</h4>
+        <p><a href="https://www.tetleyusa.com/contact-us">Contact Us</a></p>
+        <p><a href="https://www.tetleyusa.com/tetley-tea-faq">FAQs</a></p>
+        
+        <p><a href="http://tataglobalbeverages.com/">Corporate Site</a></p>
+  
+</div>
+
+
+
+
+</body>
+</html>
