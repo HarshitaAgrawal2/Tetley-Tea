@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html >
+<head>
+<!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<style>
+body,html {margin:0;
+  font-family:Arial;
+   height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0D47A1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+   right: 0;
+  bottom: 0;
+   font-size:100px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    z-index:9999;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 83px 16px 24px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1000;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: #0D47A1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative; }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-top:1px solid white;
+    padding-top:24px;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+.hero-image {
+  background-image: url("https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Super-Teas-2.jpg");
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+color:white;
+margin:300px 0px 0px 150px;
+position:absolute;
+font-size:30px;
+font-weight: bold;
+}
+.hero-text h1{
+  color:white;
+  font-size:50px;
+	font-weight: bold;
+}
+
+div.gallery {
+    border: 1px solid white;
+}
+
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+#sideTeaList{
+
+	padding-left: 10%;
+
+}
+#sideTeaList a{
+	font-size:20px;
+	display:block;
+	padding:10px;
+
+}
+#sideTeaList a:hover , .gallery a:hover{
+text-decoration: none;
+}
+#container-fluidLast{
+	margin-top: 50px; 
+	background-color: #0D47A1 ;
+	color:white;
+	text-align: center;
+	padding-top: 40px;
+}
+#container-fluidLast a {
+	color:white;
+}
+#container-fluidLast h4{
+	color:white;
+}
+#container-fluidLast a:hover{
+	text-decoration: none;
+	color:white;
+}
+#insta{
+	width:260px;
+	height:260px;
+	padding:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" ><img src="https://www.tetleyusa.com/themes/custom/tetley/logo.png" id="imgTetley" title="Home"> </a>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Our Teas
+
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Our Full Range</a>
+      <a href="#">Black Hot Tea</a>
+      <a href="#">Green Teas</a>
+      <a href="#">Caffeine Free & Decaf</a>
+      <a href="#">Super Teas</a>
+      <a href="#">Black Iced Tea</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Learn & Explore
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Tea Basics</a>
+      <a href="#">Tea & Health</a>
+      <a href="#">Tea Recipes</a>
+      <a href="#">Perfect Brew</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">About Tetley 
+     
+    </button>
+    <div class="dropdown-content">
+      <a href="#">The Tetley Story</a>
+      <a href="#">Sustainability</a>
+     
+    </div>
+  </div> 
+  
+  <a href="javascript:void(0);" style="font-size:35px" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Super Teas</h1>
+  </div>
+</div>
+
+<div class="jumbotron" style="color:#0D47A1; background-color: #FECBBB">
+	<div class="container" >
+<p style="font-size:18px">Infused with fruity flavors and multiple vitamins, Tetley Super Teas have been voted the Product of the Year 2017 in the beverage category. These delicious teas infused with REAL vitamins giving you a cuppa without compromising on the taste. Available in 6 different varieties.</p>
+</div></div>
+<div class="row">
+	<div class="col-xs-3" id="sideTeaList">
+
+      <a href="#">Our Full Range</a>
+      <a href="#">Black Hot Tea</a>
+      <a href="#">Green Teas</a>
+      <a href="#">Caffeine Free & Decaf</a>
+      <a href="#">Super Teas</a>
+      <a href="#">Black Iced Tea</a>
+   
+	</div>
+	<div class="col-xs-9">
+<div class="row">
+<div class="col-xs-3" >
+  <div class="gallery">
+    <a  href="img_fjords.jpg">
+      <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tetley-Focus_1.png"  width="300" height="200">
+   
+    <div class="desc">Focus Black Tea Vanilla with Added Caffeine</div> </a>
+  </div>
+</div>
+
+
+<div class="col-xs-3">
+  <div class="gallery">
+    <a  href="img_forest.jpg">
+      <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tetley-Glow_0.png" width="600" height="400">
+   
+    <div class="desc">Glow Pineapple and Citrus with Vitamin B7</div> </a>
+  </div>
+</div>
+
+<div class="col-xs-3">
+  <div class="gallery">
+    <a  href="img_lights.jpg">
+      <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tetley-Peach_0.png"  width="600" height="400">
+
+    <div class="desc">Immunity Peach & Orange with Vitamin C</div>    </a>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-3">
+  <div class="gallery">
+    <a  href="img_mountains.jpg">
+      <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tetley-Tropical_0.png"  width="600" height="400">
+    
+    <div class="desc">Metabolism Green Tea Tropical with Vitamin B6</div></a>
+  </div>
+</div>
+
+<div class="col-xs-3">
+  <div class="gallery">
+    <a  href="img_mountains.jpg">
+      <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tetley-Lemon_0.png"  width="600" height="400">
+  
+    <div class="desc">Immunity Green Tea Lemon Honey with Vitamin C</div>  </a>
+  </div>
+</div>
+
+<div class="col-xs-3">
+  <div class="gallery">
+    <a  href="img_mountains.jpg">
+      <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tetley-Blueberry_1.png"  width="600" height="400">
+   
+    <div class="desc">Metabolism Blueberry & Raspberry with Vitamin B6</div> </a>
+  </div>
+</div>
+</div>
+</div>
+<div class="container" >
+	<h1 style="text-align: center;color:#0D47A1;">#Tetley</h1>
+	<div class="row">
+		<div class="col-xs-3">
+			<a href="https://www.instagram.com/p/BiWopbpl0C4/">
+				<img src="https://scontent.cdninstagram.com/vp/625083a683e077e1fc831a79ff5b944a/5B8471A9/t51.2885-15/s640x640/sh0.08/e35/30945240_2096226693947716_2344952878331854848_n.jpg" 
+				title="How royal would you feel drinking tea out of a teacup with a one-carat diamond on the handle? Enter for your chance to #win Tetley’s Royal Diamond Teacup –&gt; (link in our bio) #RoyalWedding" 
+				alt="How royal would you feel drinking tea out of a teacup with a one-carat diamond on the handle? Enter for your chance to #win Tetley’s Royal Diamond Teacup –&gt; (link in our bio) #RoyalWedding" id="insta">
+			</a>
+		</div>
+		<div class="col-xs-3">
+			<a href="https://www.instagram.com/p/BiPBEy_luII/">
+				<img src="https://scontent.cdninstagram.com/vp/07ed2109e7994aa35036b943a0419564/5AEEA07E/t51.2885-15/s640x640/sh0.08/e35/31023909_1044787105679088_7545049575225032704_n.jpg" 
+				title="Super mums deserve a super tea… and flowers of course! For Mum’s Day, we’re giving away something lovely: a bouquet and our #vitamin-infused #Super Teas! Comment on our Facebook post with your favourite #flower for your chance to #win! (Link in our bio)" 
+				alt="Super mums deserve a super tea… and flowers of course! For Mum’s Day, we’re giving away something lovely: a bouquet and our #vitamin-infused #Super Teas! Comment on our Facebook post with your favourite #flower for your chance to #win! (Link in our bio)" id="insta" >
+			</a>
+		</div>
+		<div class="col-xs-3">
+			<a href="https://www.instagram.com/p/BiHTkCBFwGl/">
+				<img src="https://scontent.cdninstagram.com/vp/bec2e96d6bd92136d1e536dbbd6a3dd4/5B7A8795/t51.2885-15/s640x640/sh0.08/e35/31113158_2047187958657100_8909238420883111936_n.jpg" 
+				title="Have you discovered which #royal family member you are yet? Take our noble quiz (Link in our bio) and you may #win our Royal Diamond Teacup – featuring a one-carat diamond! (My word!)" 
+				alt="Have you discovered which #royal family member you are yet? Take our noble quiz (Link in our bio) and you may #win our Royal Diamond Teacup – featuring a one-carat diamond! (My word!)" id="insta">
+			</a>
+		</div>
+		<div class="col-xs-3">
+			<a href="https://www.instagram.com/p/Bh83EbrnuUT/">
+				<img src="https://scontent.cdninstagram.com/vp/22fac2c4b6670538cb38667229741781/5B836CBE/t51.2885-15/s640x640/sh0.08/e35/30603834_933181513521884_6384572664798773248_n.jpg" 
+				title="Looking for a new biscuit #recipe? One made with #tea, perhaps... Check out @chefsbest for their Tetley Oatmeal Coconut Cookie recipe!" 
+				alt="Looking for a new biscuit #recipe? One made with #tea, perhaps... Check out @chefsbest for their Tetley Oatmeal Coconut Cookie recipe!" id="insta">
+			</a>
+		</div>
+	</div>
+</div>
+<div class="container-fluid" id="container-fluidLast">
+	<div class="container"> 
+		<div class="row">
+			<div class="col-sm-4">
+				<h4>Legal</h4>
+				<p><a href="https://www.tetleyusa.com/terms-conditions"> Terms & Conditions</a></p>
+				<p><a href="https://www.tetleyusa.com/privacy-policy"> Privacy Policy</a></p>
+				<p><a href="https://www.tetleyusa.com/california-transparency-supply-chains-act"> The California Transparency in Supply Chains Act</a></p>
+				<p><a href="https://www.tetleyusa.com/copyright"> Copyright</a></p>
+				<p><a href="https://www.tetleyusa.com/cookie-policy"> Cookie Policy</a></p>
+			</div>
+			<div class="col-sm-4">
+				<h4>Customer Support</h4>
+				<p><a href="https://www.tetleyusa.com/contact-us">Contact Us</a></p>
+				<p><a href="https://www.tetleyusa.com/tetley-tea-faq">FAQs</a></p>
+			</div>
+			<div class="col-sm-4">
+				
+				<p><a href="http://tataglobalbeverages.com/">Corporate Site</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
