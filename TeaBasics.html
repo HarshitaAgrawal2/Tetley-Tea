@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html >
+<head>
+<!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body,html {margin:0;
+  font-family:Arial;
+   height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0D47A1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+   right: 0;
+  bottom: 0;
+   font-size:100px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    z-index:9999;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 83px 16px 24px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1000;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: #0D47A1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative; }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-top:1px solid white;
+    padding-top:24px;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+.hero-image {
+  background-image: url("https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tea-Plantations-2000x639.jpg");
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+color:white;
+margin:300px 0px 0px 150px;
+position:absolute;
+font-size:30px;
+font-weight: bold;
+}
+.hero-text h1{
+  color:white;
+  font-size:50px;
+  font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+#basics{
+  color:#0D47A1;
+
+}
+#basics h1{
+  font-weight: bold;
+  padding: 10% 10% 2% 15%;
+}
+#basics p{
+  font-size: 18px;
+  padding: 2%  15% ;
+}
+#basicsImg2{
+  margin-left: 20%;
+}
+#basics2{
+  margin-top: 35%;
+}
+#basics2 p{
+  font-size:18px;
+  color:#0D47A1;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-bottom: 2%;
+}
+#basics3 {
+  padding: 7%;
+}
+#basics3 p{
+  font-size:16px;
+  color:#0D47A1;
+  padding: 1%;
+}
+#basics4{
+  color:#0D47A1;
+}
+#basics4 p{
+  padding-top: 3%;
+  font-size:16px;
+}
+
+#container-fluidLast{
+  margin-top: 50px; 
+  background-color: #0D47A1 ;
+  color:white;
+  text-align: center;
+  padding-top: 40px;
+}
+#container-fluidLast a {
+  color:white;
+}
+#container-fluidLast h4{
+  color:white;
+}
+#container-fluidLast a:hover{
+  text-decoration: none;
+  color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" ><img src="https://www.tetleyusa.com/themes/custom/tetley/logo.png" id="imgTetley" title="Home"> </a>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Our Teas
+
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Our Full Range</a>
+      <a href="#">Black Hot Tea</a>
+      <a href="#">Green Teas</a>
+      <a href="CaffeineFree.html">Caffeine Free & Decaf</a>
+      <a href="SuperTeas.html">Super Teas</a>
+      <a href="BlackIcedTea.html">Black Iced Tea</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Learn & Explore
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Tea Basics</a>
+      <a href="Tea&Health.html">Tea & Health</a>
+      <a href="#">Tea Recipes</a>
+      <a href="#">Perfect Brew</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">About Tetley 
+     
+    </button>
+    <div class="dropdown-content">
+      <a href="#">The Tetley Story</a>
+      <a href="#">Sustainability</a>
+     
+    </div>
+  </div> 
+  
+  <a href="javascript:void(0);" style="font-size:35px" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>What is Tea?</h1>
+    <p style="color:white">At Tetley, we’ve been making tea since 1837, so we know a thing or two about how to make the perfect cup.</p>
+  </div>
+</div>
+
+<div class="jumbotron" style="color:#0D47A1;">
+  <div class="container" >
+    <p style="font-size:18px">The journey to your cup begins in tea gardens around the world, where tea is made from the young leaves and unopened buds of the plant, Camellia sinensis. We grow and buy tea from all across the world to get that lovely, full-bodied flavour that’s unique to Tetley.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6" >
+      <div id="basics">
+      <h1 >Where Does Tea come from?</h1>
+      <p >Our experienced buyers work closely with thousands of tea gardens in over 25 different countries to select the very best tea leaves. For us, it is about helping to create a thriving, global tea industry that is socially fair and environmentally sustainable. That is why we are founding members of the Ethical Tea Partnership and source 100% of our tea from Rainforest Alliance CertifiedTM gardens. </p>
+      </div>
+  </div>
+  <div class="col-sm-6">
+    <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Tea-Plantations-483x680.jpg">
+  </div>
+</div>
+
+<div class="jumbotron" style="background-color:#0D47A1; color:white; padding: 10% ;margin:-8%">
+  <div class="container" >
+    <p style="font-size:18px;padding: 0 10%;text-align:center">Tea plants flourish in warm, moist climates and can grow 20 feet high if left unchecked! However the best tea are ones grown in cool climates and at high altitudes, with the tea plants trimmed to only three to four feet in height and width.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/map2.jpg" id="basicsImg2">
+  </div>
+  <div class="col-sm-6" >
+      <div id="basics2">
+      
+      <p >Tetley tea buyers source the best tea around the world to brew a perfect cuppa. The main producers of tea are SriLanka, India, China, Japan, Indonesia, Turkey and some parts of Africa and South America.</p>
+      <p>The tea farmers we source from take great pride in picking only the best tea leaves for your brew. You can find out more about our sustainability initiatives here.</p>
+      <p>Before landing on a shelf at your local store, each Tetley blend undergoes a crucial four-stage journey from crop to cup. The key ingredients are care and attention – after all, that’s what goes into making a great quality cup of tea. </p>
+      </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div id="basics3">
+<p style="text-align: center;padding: 3%"><b>Most of our teas come from the following regions</b></p>
+ <p><b>Argentina -</b> This hot and humid region produces mild teas with clear and bright liquors, perfect for Iced Tea!</p>
+<p><b>Kenya -</b> Most teas are grown in the highlands of the Great Rift Valley that runs through Kenya. The most prized teas come from the East. Grown at high altitudes, these teas are super sparkly and full of flavor.</p>
+<p><b>Malawi -</b> Known as the warm heart of Africa, the soil in this country is beautiful, vibrant, red color. This produces the most richly colored teas in the world.</p>
+<p><b>China -</b> The Chinese are experts in green, white and oolong teas. Each region has its own unique style, with closely guarded secrets passed down through generations. It would be impossible to taste all of the tea in China!</p>
+<p><b>Ceylon (Sri Lanka) -</b> This tropical island produces some beautiful teas – floral, fruity and smooth; it is grown high above sea level in the mountainous misty forests.</p>
+<p><b>Darjeeling (India) -</b> Grown in the foothills of the Himalayas, teas here are delicate and peachy. In fact, they are often referred to as the champagne of teas.</p>
+<p><b>Assam (India) -</b> Teas grown in the lush Brahmaputra valley of Northern India are rich, malty, brisk and full-bodied – perfect to wake you up in the morning.</p>
+<p><b>Indonesia -</b> These islands in South East Asia produce naturally spicy teas that take flavor well, perfect for Earl Grey blends.</p>
+</div>
+</div>
+
+<div class="container" style="text-align: center">
+  <div id="basics4">
+<h1 >Tea Types</h1>
+<p>Tea can be grouped into four major types, according to the degree of oxidation or exposure to air</p>
+
+
+
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" >
+      <li data-target="#myCarousel" data-slide-to="0" class="active" style="border-color:#0D47A1;"></li>
+      <li data-target="#myCarousel" data-slide-to="1" style="border-color:#0D47A1;"></li>
+      <li data-target="#myCarousel" data-slide-to="2" style="border-color:#0D47A1;"></li>
+      <li data-target="#myCarousel" data-slide-to="3" style="border-color:#0D47A1;"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Black_tea_1.jpg"  style="max-width:100%;float:right">
+         <div  style="color:#0D47A1;background-color: white"> 
+          <h3>Black Tea</h3>
+          <p>One of the most widely consumed in the USA, black tea is stronger in flavour. It is withered, rolled, sifted and oxidized until turns into a bright copper colour.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/green%20tea.jpg" style="max-width:100%;float:right">
+          <div  style="color:#0D47A1;background-color: white"> 
+          <h3>Green Tea</h3>
+          <p>Extremely popular in China and Japan, green tea is free from the oxidation and withering process.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/white%20tea.jpg" style="max-width:100%;float:right">
+          <div  style="color:#0D47A1;background-color: white"> 
+          <h3>White Tea</h3>
+          <p>White tea, which is again non-oxidized, features young or minimally processed Camellia sinesis leaves.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://www.tetleyusa.com/sites/g/files/gfwrlq161/files/Oolong%20Tea%C2%A0.jpg" style="max-width:100%;float:right">
+        <div  style="color:#0D47A1;background-color: white"> 
+          <h3>Oolong Tea</h3>
+          <p>Oolong tea is semi-oxidized, and its leaves will have a greenish brown colour.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" style="color:#0D47A1;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" style="color:#0D47A1;"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<p>For Information on Tetley’s blending process and our Tea Master’s suggestions on how to brew the perfect cup of Black or Green tea, please visit The Perfect Brew.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" id="container-fluidLast">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Legal</h4>
+        <p><a href="https://www.tetleyusa.com/terms-conditions"> Terms & Conditions</a></p>
+        <p><a href="https://www.tetleyusa.com/privacy-policy"> Privacy Policy</a></p>
+        <p><a href="https://www.tetleyusa.com/california-transparency-supply-chains-act"> The California Transparency in Supply Chains Act</a></p>
+        <p><a href="https://www.tetleyusa.com/copyright"> Copyright</a></p>
+        <p><a href="https://www.tetleyusa.com/cookie-policy"> Cookie Policy</a></p>
+      </div>
+      <div class="col-sm-4">
+        <h4>Customer Support</h4>
+        <p><a href="https://www.tetleyusa.com/contact-us">Contact Us</a></p>
+        <p><a href="https://www.tetleyusa.com/tetley-tea-faq">FAQs</a></p>
+      </div>
+      <div class="col-sm-4">
+        
+        <p><a href="http://tataglobalbeverages.com/">Corporate Site</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
